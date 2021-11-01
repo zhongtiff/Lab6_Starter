@@ -104,9 +104,9 @@ class RecipeCard extends HTMLElement {
     // Part 1 Expose - TODO
 
     //Image 
-    let image= document.createElement('img')
-      image.setAttribute('src', searchForKey(data, "thumbnailUrl");
-      image.setAttribute('alt', searchForKey(data, "headline");
+    let image= document.createElement('img');
+      image.setAttribute('src', searchForKey(data, "thumbnailUrl"));
+      image.setAttribute('alt', searchForKey(data, "headline"));
       card.appendChild(image);
 
     //Title
@@ -159,7 +159,7 @@ class RecipeCard extends HTMLElement {
     //ingredients
     let ingredients = document.createElement('p');
     ingredients.class = "ingredients"
-    ingredients.setAttribute('innerText', createIngredientList(recipeIngredient);
+    ingredients.setAttribute('innerText', createIngredientList(recipeIngredient));
     card.appendChild(ingredients);
     
     //Shadow DOM Tree
